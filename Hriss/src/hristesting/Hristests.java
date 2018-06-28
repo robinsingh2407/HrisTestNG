@@ -78,7 +78,7 @@ public class Hristests {
 	@Test(priority=4)
 	public void validcredentials() {
 		UserLogin obj =new UserLogin(driver);
-		obj.login("robinsingh", "Robin@321#");
+		obj.login("robinsingh", "Yourcorrectpassword");
 		Assert.assertTrue(obj.getmessagewhenrightcredentials().contains("4575"));
 		try {
 			Thread.sleep(2000);
